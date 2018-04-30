@@ -10,7 +10,7 @@
 		D514AA712096E4360016CF2A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D514AA702096E4350016CF2A /* Stack.swift */; };
 		D5D485F72096E0A800305C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D485F62096E0A800305C3C /* AppDelegate.swift */; };
 		D5D485FE2096E0A900305C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D485FD2096E0A900305C3C /* Assets.xcassets */; };
-		D5D4860C2096E0A900305C3C /* StructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4860B2096E0A900305C3C /* StructuresTests.swift */; };
+		D5D4860C2096E0A900305C3C /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4860B2096E0A900305C3C /* StackTests.swift */; };
 		D5D486182096E18000305C3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D486172096E18000305C3C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		D5D485FD2096E0A900305C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D486022096E0A900305C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D486072096E0A900305C3C /* StructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5D4860B2096E0A900305C3C /* StructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresTests.swift; sourceTree = "<group>"; };
+		D5D4860B2096E0A900305C3C /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		D5D4860D2096E0A900305C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D486172096E18000305C3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 		D5D4860A2096E0A900305C3C /* StructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5D4860B2096E0A900305C3C /* StructuresTests.swift */,
+				D5D4860B2096E0A900305C3C /* StackTests.swift */,
 				D5D4860D2096E0A900305C3C /* Info.plist */,
 			);
 			path = StructuresTests;
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5D4860C2096E0A900305C3C /* StructuresTests.swift in Sources */,
+				D5D4860C2096E0A900305C3C /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
