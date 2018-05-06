@@ -1,5 +1,17 @@
 public final class LinkedList<Value>
 {
+    private final class Unit
+    {
+        fileprivate var value: Value
+        fileprivate var next: Unit?
+        fileprivate weak var previous: Unit?
+        
+        fileprivate init(value: Value)
+        {
+            self.value = value
+        }
+    }
+    
     // MARK: Public
     
     public var isEmpty: Bool
@@ -38,19 +50,19 @@ public final class LinkedList<Value>
     
     // MARK: Private
     
-    private final class Unit
-    {
-        fileprivate var value: Value
-        fileprivate var next: Unit?
-        fileprivate weak var previous: Unit?
-        
-        fileprivate init(value: Value)
-        {
-            self.value = value
-        }
-    }
-    
     private var head: Unit?
     
-    
+    private func unit(at index: Int) -> Unit?
+    {
+        if index == 0
+        {
+            return self.head
+        }
+        else
+        {
+            
+        }
+        
+        return nil
+    }
 }
