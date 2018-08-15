@@ -48,6 +48,13 @@ public final class LinkedList<Value>
         return 0
     }
     
+    public subscript (index: Int) -> Value?
+    {
+        let unit = self.unit(at: index)
+        
+        return unit?.value
+    }
+    
     // MARK: Private
     
     private var head: Unit?
@@ -60,9 +67,16 @@ public final class LinkedList<Value>
         }
         else
         {
+            var unit = self.head?.next
             
+            for _ in 1 ..< index
+            {
+                unit = unit?.next
+                
+                guard unit != nil else { break }
+            }
+            
+            return unit
         }
-        
-        return nil
     }
 }

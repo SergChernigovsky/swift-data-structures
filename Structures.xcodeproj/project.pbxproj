@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D514AA712096E4360016CF2A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D514AA702096E4350016CF2A /* Stack.swift */; };
-		D5200D89209A1C8D0050C8CF /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5200D88209A1C8D0050C8CF /* LinkedList.swift */; };
 		D5D485F72096E0A800305C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D485F62096E0A800305C3C /* AppDelegate.swift */; };
 		D5D485FE2096E0A900305C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D485FD2096E0A900305C3C /* Assets.xcassets */; };
 		D5D4860C2096E0A900305C3C /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4860B2096E0A900305C3C /* StackTests.swift */; };
@@ -204,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5200D89209A1C8D0050C8CF /* LinkedList.swift in Sources */,
 				D514AA712096E4360016CF2A /* Stack.swift in Sources */,
 				D5D485F72096E0A800305C3C /* AppDelegate.swift in Sources */,
 			);
