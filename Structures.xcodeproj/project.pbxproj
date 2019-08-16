@@ -153,9 +153,11 @@
 				TargetAttributes = {
 					D5D485F22096E0A800305C3C = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1030;
 					};
 					D5D486062096E0A900305C3C = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = D5D485F22096E0A800305C3C;
 					};
 				};
@@ -353,7 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.Structures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -370,7 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.Structures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -389,7 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.StructuresTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Structures.app/Structures";
 			};
@@ -409,7 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.StructuresTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Structures.app/Structures";
 			};
