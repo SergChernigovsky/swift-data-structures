@@ -55,6 +55,13 @@ public final class LinkedList<Value>
         return unit?.value
     }
     
+    public func append(_ value: Value)
+    {
+        let unit = Unit(value: value)
+        
+        self.append(newUnit: unit)
+    }
+    
     // MARK: Private
     
     private var head: Unit?
@@ -77,6 +84,19 @@ public final class LinkedList<Value>
             }
             
             return unit
+        }
+    }
+    
+    private func append(newUnit: Unit)
+    {
+        if lastUnit = self.last
+        {
+            newUnit.previous = lastUnit
+            lastUnit.next = newUnit
+        }
+        else
+        {
+            self.head = unit
         }
     }
 }
