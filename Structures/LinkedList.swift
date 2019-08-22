@@ -1,12 +1,12 @@
-public final class LinkedList<Value>
+public final class LinkedList<T>
 {
     private final class Unit
     {
-        fileprivate var value: Value
+        fileprivate var value: T
         fileprivate var next: Unit?
         fileprivate weak var previous: Unit?
         
-        fileprivate init(value: Value)
+        fileprivate init(value: T)
         {
             self.value = value
         }
@@ -19,7 +19,7 @@ public final class LinkedList<Value>
         return self.head == nil
     }
     
-    public var last: Value?
+    public var last: T?
     {
         if var unit = self.head
         {
@@ -48,14 +48,14 @@ public final class LinkedList<Value>
         return 0
     }
     
-    public subscript (index: Int) -> Value?
+    public subscript (index: Int) -> T?
     {
         let unit = self.unit(at: index)
         
         return unit?.value
     }
     
-    public func append(_ value: Value)
+    public func append(_ value: T)
     {
         let unit = Unit(value: value)
         
