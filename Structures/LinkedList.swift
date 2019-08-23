@@ -21,14 +21,7 @@ public final class LinkedList<T>
     
     public var last: T?
     {
-        if var unit = self.head
-        {
-            while let next = unit.next { unit = next }
-            
-            return unit.value
-        }
-        
-        return nil
+        return self.lastUnit()?.value ?? nil
     }
     
     public var count: Int
@@ -66,6 +59,19 @@ public final class LinkedList<T>
     
     private var head: Unit?
     
+    private func lastUnit() -> Unit?
+    {
+        if var unit = self.head
+        {
+            while let next = unit.next { unit = next }
+            
+            return unit
+        }
+        
+        return nil
+    }
+    
+    
     private func unit(at index: Int) -> Unit?
     {
         if index == 0
@@ -89,14 +95,14 @@ public final class LinkedList<T>
     
     private func append(newUnit: Unit)
     {
-        if lastUnit = self.last
+        if let lastUnit = self.lastUnit()
         {
             newUnit.previous = lastUnit
             lastUnit.next = newUnit
         }
         else
         {
-            self.head = unit
+            self.head = newUnit
         }
     }
 }
