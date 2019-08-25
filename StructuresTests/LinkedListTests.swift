@@ -19,4 +19,21 @@ public final class LinkedListTests: XCTestCase
         XCTAssertEqual(list.isEmpty, false)
         XCTAssertEqual(list.count, 3)
     }
+    
+    func test_unit_at_index()
+    {
+        let list = LinkedList<String>()
+        
+        XCTAssertNil(list[0])
+        XCTAssertNil(list[1])
+        XCTAssertNil(list[2])
+        
+        list.append("Odin")
+        list.append("Thor")
+        list.append("Loki")
+        
+        XCTAssertEqual(list[0], "Odin")
+        XCTAssertEqual(list[1], "Thor")
+        XCTAssertEqual(list[2], "Loki")
+    }
 }

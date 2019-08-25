@@ -74,23 +74,18 @@ public final class LinkedList<T>
     
     private func unit(at index: Int) -> Unit?
     {
-        if index == 0
-        {
-            return self.head
-        }
-        else
-        {
-            var unit = self.head?.next
+        guard index != 0 else { return self.head }
+        
+        var unit = self.head?.next
             
-            for _ in 1 ..< index
-            {
-                unit = unit?.next
+        for _ in 1 ..< index
+        {
+            unit = unit?.next
                 
-                guard unit != nil else { break }
-            }
-            
-            return unit
+            guard unit != nil else { break }
         }
+            
+        return unit
     }
     
     private func append(newUnit: Unit)
