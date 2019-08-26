@@ -55,6 +55,11 @@ public final class LinkedList<T>
         self.append(newUnit: unit)
     }
     
+    public func removeAll()
+    {
+        self.head = nil
+    }
+    
     // MARK: Private
     
     private var head: Unit?
