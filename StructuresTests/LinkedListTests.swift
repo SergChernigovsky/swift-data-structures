@@ -36,4 +36,17 @@ public final class LinkedListTests: XCTestCase
         XCTAssertEqual(list[1], "Thor")
         XCTAssertEqual(list[2], "Loki")
     }
+    
+    func test_remove_all()
+    {
+        let list = LinkedList<Int>()
+        list.append(1)
+        list.append(2)
+        
+        XCTAssertEqual(list.isEmpty, false)
+        
+        list.removeAll()
+        
+        XCTAssertEqual(list.isEmpty, true)
+    }
 }
