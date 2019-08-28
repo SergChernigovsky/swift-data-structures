@@ -60,6 +60,11 @@ public final class LinkedList<T>
         self.head = nil
     }
     
+    public func insert(_ value: T, at index: Int)
+    {
+        
+    }
+    
     // MARK: Private
     
     private var head: Unit?
