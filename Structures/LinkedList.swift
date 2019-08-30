@@ -62,7 +62,9 @@ public final class LinkedList<T>
     
     public func insert(_ value: T, at index: Int)
     {
+        let newUnit = Unit(value: value)
         
+        self.insert(newUnit, at: index)
     }
     
     // MARK: Private
@@ -109,5 +111,10 @@ public final class LinkedList<T>
         {
             self.head = newUnit
         }
+    }
+    
+    private func insert(_ unit: Unit, at index: Int)
+    {
+        
     }
 }
