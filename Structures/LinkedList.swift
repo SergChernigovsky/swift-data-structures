@@ -115,6 +115,20 @@ public final class LinkedList<T>
     
     private func insert(_ unit: Unit, at index: Int)
     {
-        
+        if index == 0
+        {
+            unit.next = self.head
+            self.head?.previous = unit
+            self.head = unit
+        }
+        else
+        {
+            let next = self.unit(at: index)
+            let previous = next?.previous
+            unit.next = next
+            unit.previous = previous
+            previous?.next = unit
+            next?.previous = unit
+        }
     }
 }
