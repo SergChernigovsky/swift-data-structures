@@ -50,7 +50,7 @@ public final class LinkedListTests: XCTestCase
         XCTAssertEqual(list.isEmpty, true)
     }
     
-    func test_insert()
+    func test_insert_at_not_null()
     {
         let list = LinkedList<String>()
         list.append("Odin")
@@ -58,9 +58,6 @@ public final class LinkedListTests: XCTestCase
         list.append("Loki")
         
         XCTAssertEqual(list.count, 3)
-        XCTAssertEqual(list[0], "Odin")
-        XCTAssertEqual(list[1], "Thor")
-        XCTAssertEqual(list[2], "Loki")
         
         list.insert("Frigg", at: 1)
         
@@ -69,5 +66,19 @@ public final class LinkedListTests: XCTestCase
         XCTAssertEqual(list[1], "Frigg")
         XCTAssertEqual(list[2], "Thor")
         XCTAssertEqual(list[3], "Loki")
+    }
+    
+    func test_insert_at_null()
+    {
+        let list = LinkedList<String>()
+        list.append("Odin")
+        
+        XCTAssertEqual(list.count, 1)
+        
+        list.insert("Frigg", at: 0)
+        
+        XCTAssertEqual(list.count, 2)
+        XCTAssertEqual(list[0], "Frigg")
+        XCTAssertEqual(list[1], "Odin")
     }
 }
