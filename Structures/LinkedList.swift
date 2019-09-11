@@ -131,4 +131,9 @@ public final class LinkedList<T>
             next?.previous = unit
         }
     }
+    
+    private func insert(firstUnit: Unit, and lastUnit: Unit, at index: Int)
+    {
+        
+    }
 }
